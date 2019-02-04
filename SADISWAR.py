@@ -1,9 +1,7 @@
-#utf_8 *lineX [sadisbot Creator]
+#utf_8 *lineX [prankBots Creator]
 import DRAGON
 from DRAGON import *
 from dkbot.ttypes import *
-from Rank.lineX import *
-from Rank.service.ttypes import *
 from multiprocessing import Pool, Process
 from datetime import datetime
 from threading import Thread
@@ -19,29 +17,29 @@ settingsOpen = codecs.open("PrankBots.json","r","utf-8")
 PrankBots = json.load(settingsOpen)
 settingsOpen = codecs.open("Abouts.json","r","utf-8")
 Abouts = json.load(settingsOpen)
-# MASUKIN TOKEN DISINI GUYS
+# SADIS
 
-selfbot = LineClient("
+selfbot = LineClient("email","pin")
 selfbot.log("Auth Token : " + str(selfbot.authToken))
 channel = LineChannel(selfbot)
 selfbot.log("Channel Access Token : " + str(channel.channelAccessToken))
 
-kicker1 = LineClient("
+kicker1 = LineClient("email","pin")
 kicker1.log("Auth Token : " + str(kicker1.authToken))
 channel = LineChannel(kicker1)
 kicker1.log("Channel Access Token : " + str(channel.channelAccessToken))
 
-kicker2 = LineClient("
+kicker2 = LineClient("email","pin")
 kicker2.log("Auth Token : " + str(kicker2.authToken))
 channel = LineChannel(kicker2)
 kicker2.log("Channel Access Token : " + str(channel.channelAccessToken))
 
-kicker3 = LineClient("
+kicker3 = LineClient("email","pin")
 kicker3.log("Auth Token : " + str(kicker3.authToken))
 channel = LineChannel(kicker3)
 kicker3.log("Channel Access Token : " + str(channel.channelAccessToken))
 
-kicker4 = LineClient("
+kicker4 = LineClient("email","pin")
 kicker4.log("Auth Token : " + str(kicker4.authToken))
 channel = LineChannel(kicker4)
 kicker4.log("Channel Access Token : " + str(channel.channelAccessToken))
@@ -50,34 +48,9 @@ pending = LineClient("
 pending.log("Auth Token : " + str(kicker1.authToken))
 channel = LineChannel(pending)
 pending.log("Channel Access Token : " + str(channel.channelAccessToken))
+print("---LOGIN SUCCES---\nBY: SELFBOT-BY:SADIS")
+poll = LinePoll(cl)
 
-
-#selfbot = "TOKEN"
-#kicker1 = "TOKEN"
-#kicker2 = "TOKEN"
-#kicker3 = "TOKEN"
-#kicker4 = "TOKEN"
-#pending = "TOKEN"
-"""
-PPPPPPPPPPPPPPPPP                                                           kkkkkkkk           BBBBBBBBBBBBBBBBB                             tttt                           
-P::::::::::::::::P                                                          k::::::k           B::::::::::::::::B                         ttt:::t                           
-P::::::PPPPPP:::::P                                                         k::::::k           B::::::BBBBBB:::::B                        t:::::t                           
-PP:::::P     P:::::P                                                        k::::::k           BB:::::B     B:::::B                       t:::::t                           
-  P::::P     P:::::Prrrrr   rrrrrrrrr     aaaaaaaaaaaaa   nnnn  nnnnnnnn     k:::::k    kkkkkkk  B::::B     B:::::B   ooooooooooo   ttttttt:::::ttttttt        ssssssssss   
-  P::::P     P:::::Pr::::rrr:::::::::r    a::::::::::::a  n:::nn::::::::nn   k:::::k   k:::::k   B::::B     B:::::B oo:::::::::::oo t:::::::::::::::::t      ss::::::::::s  
-  P::::PPPPPP:::::P r:::::::::::::::::r   aaaaaaaaa:::::a n::::::::::::::nn  k:::::k  k:::::k    B::::BBBBBB:::::B o:::::::::::::::ot:::::::::::::::::t    ss:::::::::::::s 
-  P:::::::::::::PP  rr::::::rrrrr::::::r           a::::a nn:::::::::::::::n k:::::k k:::::k     B:::::::::::::BB  o:::::ooooo:::::otttttt:::::::tttttt    s::::::ssss:::::s
-  P::::PPPPPPPPP     r:::::r     r:::::r    aaaaaaa:::::a   n:::::nnnn:::::n k::::::k:::::k      B::::BBBBBB:::::B o::::o     o::::o      t:::::t           s:::::s  ssssss 
-  P::::P             r:::::r     rrrrrrr  aa::::::::::::a   n::::n    n::::n k:::::::::::k       B::::B     B:::::Bo::::o     o::::o      t:::::t             s::::::s      
-  P::::P             r:::::r             a::::aaaa::::::a   n::::n    n::::n k:::::::::::k       B::::B     B:::::Bo::::o     o::::o      t:::::t                s::::::s   
-  P::::P             r:::::r            a::::a    a:::::a   n::::n    n::::n k::::::k:::::k      B::::B     B:::::Bo::::o     o::::o      t:::::t    ttttttssssss   s:::::s 
-PP::::::PP           r:::::r            a::::a    a:::::a   n::::n    n::::nk::::::k k:::::k   BB:::::BBBBBB::::::Bo:::::ooooo:::::o      t::::::tttt:::::ts:::::ssss::::::s
-P::::::::P           r:::::r            a:::::aaaa::::::a   n::::n    n::::nk::::::k  k:::::k  B:::::::::::::::::B o:::::::::::::::o      tt::::::::::::::ts::::::::::::::s 
-P::::::::P           r:::::r             a::::::::::aa:::a  n::::n    n::::nk::::::k   k:::::k B::::::::::::::::B   oo:::::::::::oo         tt:::::::::::tt s:::::::::::ss  
-PPPPPPPPPP           rrrrrrr              aaaaaaaaaa  aaaa  nnnnnn    nnnnnnkkkkkkkk    kkkkkkkBBBBBBBBBBBBBBBBB      ooooooooooo             ttttttttttt    sssssssssss    
-
-"""
-#__________________________
 kk1 = LINE(kicker1)
 kk2 = LINE(kicker2)
 kk3 = LINE(kicker3)
